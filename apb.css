@@ -1,0 +1,268 @@
+/* holyliving.css */
+
+body {
+    background-color: #756c5b !important;
+    background-image: url('floral5.jpeg'), url('floral5.jpeg'); /* Use the same image for both sides */
+    background-repeat: repeat-y, repeat-y; /* Repeat the images vertically */
+    background-position: left top, right top; /* Position one on the left and one on the right */
+    background-size: 1000px auto, 1000px auto; /* Adjust the size as needed */
+}
+
+/* Header styling */
+header {
+    background-color: #4e4b45; /* Dark muted background */
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 5px solid #a67b5b; /* Gold top border */
+    border-bottom: 5px solid #a67b5b; /* Gold bottom border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+header h1 {
+    font-family: 'Cinzel Decorative', serif; /* Medieval-style font */
+    font-size: 36px;
+    color: #fdf5e6; /* Cream color */
+    margin: 0;
+    letter-spacing: 1px; /* Slight spacing for a more elegant look */
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #3b3a36; /* Darker background for contrast */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-bottom: 3px solid #a67b5b;
+}
+
+nav a {
+    color: #fdf5e6; /* Light text */
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: 'Cinzel', serif; /* Complementary medieval font */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #a67b5b; /* Gold accent on hover */
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Adjusting font styles */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;700&display=swap');
+
+
+/* Center content and restrict the maximum width */
+.container {
+    max-width: 800px; /* Adjust this value to your liking */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add some padding for readability */
+    line-height: 1.6; /* Improve line spacing for better readability */
+    text-align: justify; /* Justify text for a clean look */
+    background-color: #fdf5e6;
+    border-left: 5px solid #a67b5b; /* Gold top border */
+    border-right: 5px solid #a67b5b; /* Gold bottom border */
+    border-bottom: 5px solid #a67b5b; /* Gold bottom border */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        max-width: 95%; /* Allow the container to take up more space on smaller screens */
+        padding: 10px; /* Reduce padding to fit smaller screens */
+    }
+}
+
+/* Content side bar */
+/* Style for the contents sidebar */
+.contents-sidebar {
+    position: fixed;
+    top: 20%;
+    right: 20px;
+    width: 200px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+/* Style for links in the contents sidebar */
+.contents-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contents-sidebar ul li {
+    margin: 10px 0;
+}
+
+.contents-sidebar ul li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.contents-sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the active link in the contents sidebar */
+.contents-sidebar ul li a.active {
+    font-weight: bold;
+    color: #004085;
+    border-left: 3px solid #007bff;
+    padding-left: 5px;
+    background-color: #f0f8ff; /* Optional: Add background color for better visibility */
+}
+
+/* Title */
+.title {
+    color: #4A4A4A;
+}
+
+/* paragraph formatting */
+.paragraph {
+    margin-top: 0.25in;
+    text-align: justify;
+}
+
+.drop-cap {
+    font-size: 24pt;
+    font-weight: bold;
+    float: left;
+    margin-right: 0.1em;
+}
+
+/* Style for the paragraph */
+.paragraph1 {
+    margin-top: 9pt;
+    text-align: justify;
+    line-height: 1.6; /* Optional: Improve readability */
+}
+
+/* Style for the drop cap (first letter) */
+.drop-cap1 {
+    font-size: 24pt;
+    font-weight: bold; /* Optional: Make the drop cap bold */
+    float: left; /* Align the drop cap to the left */
+    margin-right: 0.1em; /* Add a small margin to the right of the drop cap */
+}
+
+/* Style for justified paragraphs with indentation */
+.indented-paragraph {
+    margin-top: 9pt;
+    text-align: justify;
+    text-indent: 0.25in; /* Indent the first line */
+    line-height: 1.6; /* Optional: Improve readability */
+}
+
+/* Style for centered headings */
+.centered-heading {
+    margin-top: 0.25in;
+    text-align: center;
+    font-size: 14pt;
+}
+
+/* Style for italic text */
+.italic {
+    font-style: italic;
+}
+
+/* Style for centered chapters */
+.centered-chapter {
+    margin-top: 0.25in;
+    text-align: center;
+    font-size: 16pt;
+}
+
+/* Style for uppercase text */
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Style for centered chapter titles */
+.centered-chapter-title {
+    margin-top: 9pt;
+    text-align: center;
+    font-size: 18pt; /* Adjust font size if needed */
+    line-height: 1.6;
+    font-style: italic; /* Italicize the text */
+}
+
+/* Optional: Add some spacing for the section */
+#chapter1 {
+    margin-top: 20px;
+}
+
+/* Style "chapter:" */
+.chapter {
+    margin-top: 1in;
+    text-align: center;
+    font-size: 16pt;
+}
+
+/* Style for chapter number */
+.chapter-label {
+    text-transform: uppercase;
+}
+
+/* Style for centered chapter number */
+.centered-chapter {
+    font-size: 16pt;
+}
+
+/*.small-caps {
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+*/
+
+.sub-header {
+    margin-top: 9pt;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 1.25in;
+    margin-bottom: 0.0001pt;
+    text-align: justify;
+    text-indent: -1.25in;
+}
+
+.sub-header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sub-header-ital {
+    margin-top: 9pt;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 1.25in;
+    margin-bottom: 0.0001pt;
+    text-align: justify;
+    text-indent: -1.25in;
+    font-style: italic;
+}
+
+/* prayers formatting */
+.prayer {
+    text-align: center;
+    margin-top: 0.25in;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.prayer p {
+    margin: 0;
+    padding: 5px 0; /* Optional: Add space between lines */
+}
+
+.prayer h3 {
+    text-align: center;
+}
+
+
+
+
