@@ -8,14 +8,24 @@ body {
     background-size: 1000px auto, 1000px auto; /* Adjust the size as needed */
 }
 
-/* Header styling */
+/* Header styling
 header {
-    background-color: #4e4b45; /* Dark muted background */
+    background-color: #4e4b45;
     padding: 30px 20px;
     text-align: center;
-    border-top: 5px solid #a67b5b; /* Gold top border */
-    border-bottom: 5px solid #a67b5b; /* Gold bottom border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    border-top: 5px solid #a67b5b;
+    border-bottom: 5px solid #a67b5b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+    */
+
+header {
+    background-color: #4e4b45;
+    color: #fdf5e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 header h1 {
@@ -26,27 +36,56 @@ header h1 {
     letter-spacing: 1px; /* Slight spacing for a more elegant look */
 }
 
-/* Navigation bar styling */
+/* Navigation bar styling
 nav {
-    background-color: #3b3a36; /* Darker background for contrast */
+    background-color: #3b3a36;
     display: flex;
     justify-content: center;
     padding: 10px 0;
     border-bottom: 3px solid #a67b5b;
 }
+*/
 
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #3b3a36;
+    padding: 10px;
+    border-bottom: 3px solid #756c5b;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/*
 nav a {
-    color: #fdf5e6; /* Light text */
+    color: #fdf5e6;
     text-decoration: none;
     padding: 10px 15px;
-    font-family: 'Cinzel', serif; /* Complementary medieval font */
+    font-family: 'Cinzel', serif;
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+*/
+
+nav a {
+    color: #fdf5e6;
+    text-decoration: none;
+    padding: 10px 15px;
 }
 
 nav a:hover {
     background-color: #a67b5b; /* Gold accent on hover */
     color: #ffffff;
     border-radius: 5px;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 28px;
+    cursor: pointer;
+    color: #fdf5e6;
+    padding-right: 10px;
 }
 
 /* Adjusting font styles */
@@ -275,16 +314,39 @@ nav a:hover {
         font-size: 28px; /* Reduce the header font size on smaller screens */
     }
 
+    /*
     nav {
         flex-direction: column;
         padding: 10px 0;
     }
+    */
 
-    nav a {
-        padding: 10px; /* Adjust padding for mobile screens */
-        border-bottom: 1px solid #4e4b45;
-        width: 100%; /* Make the navigation links full width */
+    nav {
+        display: none; /* Hide navigation by default on mobile */
+        flex-direction: column;
+        padding: 10px;
         text-align: center;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    #navbar.show {
+        display: flex; /* Show navigation when hamburger is clicked */
+    }
+    
+    /*
+    nav a {
+        padding: 10px;
+        border-bottom: 1px solid #4e4b45;
+        width: 100%;
+        text-align: center;
+    }
+    */
+    nav a {
+        padding: 10px;
+        border-bottom: 1px solid #4e4b45;
     }
 
     .container {
