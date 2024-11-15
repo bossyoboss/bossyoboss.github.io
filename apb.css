@@ -263,6 +263,75 @@ nav a:hover {
     text-align: center;
 }
 
+/* responsive UI */
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 28px; /* Reduce the header font size on smaller screens */
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav a {
+        padding: 10px; /* Adjust padding for mobile screens */
+        border-bottom: 1px solid #4e4b45;
+        width: 100%; /* Make the navigation links full width */
+        text-align: center;
+    }
+
+    .container {
+        max-width: 95%; /* Allow the container to take up more space */
+        padding: 10px;
+        margin: auto;
+    }
+
+    .prayer {
+        text-align: left; /* Align text to left for better readability on mobile */
+        line-height: 1.6;
+    }
+
+    .prayer h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .prayer p {
+        padding: 10px 0; /* Add more padding for readability */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px; /* Further reduce font size for very small screens */
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    .sub-header, .centered-chapter-title {
+        font-size: 16px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 5px 0;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
 
 
 
