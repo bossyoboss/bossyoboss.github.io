@@ -79,9 +79,9 @@ nav a:hover {
     border-radius: 5px;
 }
 
-/* Hamburger menu styles */
+/* Hamburger menu styling */
 .hamburger {
-    display: none; /* Hidden by default */
+    display: none; /* Hidden by default on larger screens */
     font-size: 28px;
     cursor: pointer;
     color: #fdf5e6;
@@ -395,5 +395,22 @@ nav a:hover {
     }
 }
 
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+    nav {
+        display: none; /* Hide the menu by default on mobile */
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
 
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    #navbar.show {
+        display: flex; /* Show the menu when the 'show' class is added */
+        flex-direction: column;
+    }
+}
 
