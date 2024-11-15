@@ -8,7 +8,7 @@ body {
     background-size: 1000px auto, 1000px auto; /* Adjust the size as needed */
 }
 
-/* Header styling
+/* Header styling */
 header {
     background-color: #4e4b45;
     padding: 30px 20px;
@@ -17,47 +17,26 @@ header {
     border-bottom: 5px solid #a67b5b;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-    */
-
-header {
-    background-color: #4e4b45;
-    color: #fdf5e6;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
 
 header h1 {
     font-family: 'Cinzel Decorative', serif; /* Medieval-style font */
     font-size: 36px;
     color: #fdf5e6; /* Cream color */
+    text-align: center;
     margin: 0;
     letter-spacing: 1px; /* Slight spacing for a more elegant look */
 }
 
-/* Navigation bar styling
+/* Navigation bar styling */
 nav {
     background-color: #3b3a36;
     display: flex;
     justify-content: center;
     padding: 10px 0;
     border-bottom: 3px solid #a67b5b;
-}
-*/
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    background-color: #3b3a36;
-    padding: 10px;
-    border-bottom: 3px solid #756c5b;
-    transition: max-height 0.3s ease-in-out;
     overflow: hidden;
 }
 
-/*
 nav a {
     color: #fdf5e6;
     text-decoration: none;
@@ -65,13 +44,7 @@ nav a {
     font-family: 'Cinzel', serif;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-*/
 
-nav a {
-    color: #fdf5e6;
-    text-decoration: none;
-    padding: 10px 15px;
-}
 
 nav a:hover {
     background-color: #a67b5b; /* Gold accent on hover */
@@ -314,13 +287,6 @@ nav a:hover {
         font-size: 28px; /* Reduce the header font size on smaller screens */
     }
 
-    /*
-    nav {
-        flex-direction: column;
-        padding: 10px 0;
-    }
-    */
-
     nav {
         display: none; /* Hide navigation by default on mobile */
         flex-direction: column;
@@ -333,17 +299,10 @@ nav a:hover {
     }
 
     #navbar.show {
-        display: flex; /* Show navigation when hamburger is clicked */
+        display: flex; /* Show the menu when the 'show' class is added */
+        flex-direction: column;
     }
     
-    /*
-    nav a {
-        padding: 10px;
-        border-bottom: 1px solid #4e4b45;
-        width: 100%;
-        text-align: center;
-    }
-    */
     nav a {
         padding: 10px;
         border-bottom: 1px solid #4e4b45;
@@ -394,23 +353,3 @@ nav a:hover {
         padding: 8px;
     }
 }
-
-/* Responsive styles for mobile */
-@media (max-width: 768px) {
-    nav {
-        display: none; /* Hide the menu by default on mobile */
-        flex-direction: column;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .hamburger {
-        display: block; /* Show hamburger icon on mobile */
-    }
-
-    #navbar.show {
-        display: flex; /* Show the menu when the 'show' class is added */
-        flex-direction: column;
-    }
-}
-
